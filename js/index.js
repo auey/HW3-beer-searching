@@ -121,16 +121,6 @@ const getBeersAPIByNameAndYeast = (name,yeast) => fetch(`https://api.punkapi.com
 		} else if (yeast != "") {
 			getBeersAPIByYeast(yeast)
 		} else {
-			let txt = "<table style= 'wigth: 80%; margin: auto;'>";
-				txt += "<tr style='background-color: #FF9797;'>";
-				txt += "<th>" +"Image" + "</th>";
-				txt += "<th>" +"Beer name" + "</th>";
-				txt += "<th>" +"Yeast" + "</th>";
-				txt += "<th>" +"Food Pairing" + "</th>";
-				txt += "<th>" +"Tagline" + "</th>";
-				txt += "<th>" +"Description" + "</th>";
-				txt += "</tr>";
-			txt += "</table>";
-			document.getElementById("table_result").innerHTML = txt;
+			getBeersAPI()
 		}
 	}
